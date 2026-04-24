@@ -51,4 +51,3 @@ if __name__ == "__main__":
     
     print(sol.isAnagram(s1, t1))
     print(sol.isAnagram(s2, t2))
-        
