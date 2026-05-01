@@ -29,3 +29,19 @@ class Solution:
                     while nums[left] == nums[left-1] and left < right:
                         left += 1
         return res
+    
+# Test cases:
+# Case 1: nums = [-1,0,1,2,-1,-4]
+# Case 2: nums = []
+# Case 3: nums = [0]
+
+if __name__ == "__main__":
+    sol = Solution()
+    
+    nums1 = [-1,0,1,2,-1,-4]
+    nums2 = []
+    nums3 = [0]
+    
+    print(sol.threeSum(nums1)) # should return [[-1, -1, 2], [-1, 0, 1]]
+    print(sol.threeSum(nums2)) # should return []
+    print(sol.threeSum(nums3)) # should return []
